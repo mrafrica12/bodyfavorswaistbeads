@@ -1,0 +1,223 @@
+/* Body Favors Waist Beads — Design Tokens */
+:root {
+  --color-bg: #FAF7F2;
+  --color-ink: #1A1A1A;
+  --color-gold: #C9A84C;
+  --color-gold-dark: #A8882E;
+  --color-plum: #3D1F3A;
+  --color-plum-light: #5a2e56;
+  --color-blush: #E8C4B8;
+  --color-surface: #F0EBE3;
+  --color-muted: #8A7F78;
+  --color-success: #4A7C59;
+  --color-error: #B04A4A;
+  --color-white: #FFFFFF;
+  --color-border: rgba(26,26,26,0.1);
+  --color-border-gold: rgba(201,168,76,0.3);
+
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'DM Sans', -apple-system, sans-serif;
+
+  --text-hero: clamp(48px, 8vw, 96px);
+  --text-section: clamp(32px, 5vw, 56px);
+  --text-heading: clamp(24px, 3.5vw, 36px);
+  --text-subhead: clamp(18px, 2.5vw, 24px);
+  --text-body: 16px;
+  --text-small: 14px;
+  --text-tiny: 12px;
+
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 48px;
+  --space-6: 64px;
+  --space-7: 96px;
+  --space-8: 128px;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-pill: 999px;
+
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
+  --shadow-md: 0 4px 24px rgba(0,0,0,0.08);
+  --shadow-lg: 0 8px 48px rgba(0,0,0,0.12);
+  --shadow-gold: 0 4px 24px rgba(201,168,76,0.25);
+
+  --transition-base: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-spring: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  --nav-height: 72px;
+  --header-height: 200px; /* logo ~96px + promo ~40px + nav 72px — JS updates this */
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 var(--space-3);
+}
+
+.container--narrow {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 var(--space-3);
+}
+
+/* Utility */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+}
+
+.text-gold { color: var(--color-gold); }
+.text-plum { color: var(--color-plum); }
+.text-muted { color: var(--color-muted); }
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-1);
+  padding: 14px 32px;
+  border-radius: var(--radius-pill);
+  font-family: var(--font-body);
+  font-size: var(--text-small);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: var(--transition-base);
+  white-space: nowrap;
+}
+
+.btn--gold {
+  background: var(--color-gold);
+  color: var(--color-white);
+}
+.btn--gold:hover {
+  background: var(--color-gold-dark);
+  box-shadow: var(--shadow-gold);
+  transform: translateY(-1px);
+}
+
+.btn--outline {
+  border: 1.5px solid var(--color-gold);
+  color: var(--color-gold);
+}
+.btn--outline:hover {
+  background: var(--color-gold);
+  color: var(--color-white);
+}
+
+.btn--plum {
+  background: var(--color-plum);
+  color: var(--color-white);
+}
+.btn--plum:hover {
+  background: var(--color-plum-light);
+}
+
+.btn--ghost {
+  border: 1.5px solid rgba(255,255,255,0.5);
+  color: var(--color-white);
+}
+.btn--ghost:hover {
+  border-color: var(--color-white);
+  background: rgba(255,255,255,0.1);
+}
+
+.btn--sm {
+  padding: 10px 20px;
+  font-size: var(--text-tiny);
+}
+
+.btn--full {
+  width: 100%;
+}
+
+/* Fade-in animation */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideLeft {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+
+.animate-in {
+  animation: fadeUp 0.6s ease forwards;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

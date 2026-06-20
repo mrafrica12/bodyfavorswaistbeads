@@ -1,0 +1,82 @@
+[
+  {
+    "id":1,
+    "name":"Amara T.",
+    "city":"Atlanta, GA",
+    "rating":5,
+    "date":"2026-04-12",
+    "text":"I've been wearing my Color Theory beads for three months now and I receive compliments every single week. The quality is unmatched and the intention behind each bead makes me feel so grounded and feminine every day. Body Favors is the real deal!",
+    "product":"Color Theory",
+    "handle":"color-theory"
+  },
+  {
+    "id":2,
+    "name":"Kezia M.",
+    "city":"Houston, TX",
+    "rating":5,
+    "date":"2026-03-28",
+    "text":"Ordered three strands and they were packaged so beautifully. The beads are high quality — sturdy thread, gorgeous colors. I love that each color has meaning. It makes wearing them feel like a ritual of self-love.",
+    "product":"Black Pearl",
+    "handle":"black-pearl"
+  },
+  {
+    "id":3,
+    "name":"Destiny R.",
+    "city":"Charlotte, NC",
+    "rating":5,
+    "date":"2026-05-01",
+    "text":"First time ordering waist beads and I'm obsessed! The how-to-tie video on the website made it so easy. My beads haven't slipped once. Shipping was fast and the note in the package made me feel so special. 10/10.",
+    "product":"Agua",
+    "handle":"agua"
+  },
+  {
+    "id":4,
+    "name":"Nichelle B.",
+    "city":"Chicago, IL",
+    "rating":5,
+    "date":"2026-02-14",
+    "text":"I bought the Gold Rush strand for my birthday and it is absolutely stunning. The gold and champagne beads catch the light so beautifully. I feel like royalty every day. This brand truly understands the assignment.",
+    "product":"Amber Glow",
+    "handle":"amber-glow"
+  },
+  {
+    "id":5,
+    "name":"Zora W.",
+    "city":"Memphis, TN",
+    "rating":5,
+    "date":"2026-01-20",
+    "text":"The fan I purchased is a work of art. The colors are vibrant and the craftsmanship is impeccable. I used it at a photoshoot and it was the star of every frame. Fast shipping and the packaging felt so luxurious.",
+    "product":"Fan Collection",
+    "handle":"fans"
+  },
+  {
+    "id":6,
+    "name":"Monique D.",
+    "city":"New Orleans, LA",
+    "rating":5,
+    "date":"2025-12-05",
+    "text":"Been a loyal customer for over a year. Every order is consistent — beautiful beads, fast shipping, and that little affirmation card is everything. I've gifted Body Favors beads to my sister, my best friend, and my mom. We're all bead squad now!",
+    "product":"Balanced",
+    "handle":"balanced"
+  },
+  {
+    "id":7,
+    "name":"Jade A.",
+    "city":"Washington, DC",
+    "rating":5,
+    "date":"2026-04-03",
+    "text":"I ordered the self-care bundle during a rough patch and it arrived like a gift from the universe. The African net sponge, the beads, and the affirmation card together felt like a whole ritual. Thank you for pouring so much love into these products.",
+    "product":"Self-Care Bundle",
+    "handle":"self-care"
+  },
+  {
+    "id":8,
+    "name":"Faith O.",
+    "city":"Dallas, TX",
+    "rating":5,
+    "date":"2026-05-15",
+    "text":"I'm a plus-size woman and I was nervous about sizing, but the 50-inch strand fit perfectly with room to spare. The beads look absolutely gorgeous on my melanin skin. I cried happy tears when I put them on. Body Favors sees us!",
+    "product":"Bonefire",
+    "handle":"bonefire"
+  }
+]
