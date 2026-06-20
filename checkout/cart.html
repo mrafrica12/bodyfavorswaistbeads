@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Bag — Body Favors Waist Beads</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/tokens.css"><link rel="stylesheet" href="../assets/css/components.css"><link rel="stylesheet" href="../assets/css/pages.css">
+</head>
+<body>
+
+<header class="site-header">
+<a href="../index.html" class="logo-header">
+    <img src="../assets/logo/body-favors-logo.png" alt="Body Favors Waist Beads" class="logo-header__img">
+  </a>
+
+  <div class="promo-banner"><span>✨ Use code <strong>FREESHIP</strong> for free shipping on orders over $55</span><button class="promo-banner__close">✕</button></div>
+<nav class="site-nav site-nav--scrolled" id="site-nav"><div class="site-nav__inner">
+  <a href="../index.html" class="site-nav__logo"><img src="../assets/logo/body-favors-logo.png" alt="Body Favors" class="logo-nav-img"></a>
+  <div class="site-nav__links">
+    <a href="../index.html" class="site-nav__link">Home</a>
+    <div class="site-nav__dropdown-wrap"><span class="site-nav__link site-nav__dropdown-trigger">Shop <svg width="12" height="8" viewBox="0 0 12 8" fill="none"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+      <div class="site-nav__dropdown"><a href="../collections/shop-all.html"><span class="site-nav__dropdown-icon">🛍️</span> Shop All</a><a href="../collections/waist-beads.html"><span class="site-nav__dropdown-icon">✨</span> Waist Beads</a><a href="../collections/fans.html"><span class="site-nav__dropdown-icon">🪭</span> Fans</a><a href="../collections/accessories.html"><span class="site-nav__dropdown-icon">💎</span> Accessories</a><a href="../collections/self-care.html"><span class="site-nav__dropdown-icon">🌿</span> Self-Care</a><a href="../collections/flaws-all.html"><span class="site-nav__dropdown-icon">⭐</span> Flaws & All</a></div>
+    </div>
+    <a href="../pages/about-us.html" class="site-nav__link">About</a><a href="../pages/how-to-tie.html" class="site-nav__link">How To Tie</a><a href="../pages/color-chart.html" class="site-nav__link">Color Chart</a><a href="../pages/contact-us.html" class="site-nav__link">Contact</a>
+  </div>
+  <div class="site-nav__icons">
+    <button class="nav-icon-btn search-btn" data-open-search aria-label="Search"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="1.5"/><path d="M14 14l3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+    <button class="nav-icon-btn cart-btn" data-open-cart aria-label="Cart"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 3h1.5l2.5 9h8l1.5-6H6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="16" r="1" fill="currentColor"/><circle cx="14" cy="16" r="1" fill="currentColor"/></svg><span class="cart-badge" data-cart-count></span></button>
+  </div>
+  <button class="hamburger-btn" aria-label="Open menu"><span></span><span></span><span></span></button>
+</div></nav>
+</header>
+
+<div class="mobile-menu" id="mobile-menu"><div class="mobile-menu__header"><img src="../assets/logo/body-favors-logo.png" alt="Body Favors" class="mobile-menu__logo-img"><button class="mobile-menu__close">✕</button></div><nav class="mobile-menu__nav"><a href="../index.html">Home</a><a href="../collections/shop-all.html">Shop All</a><a href="../pages/about-us.html">About</a><a href="../pages/contact-us.html">Contact</a></nav><div class="mobile-menu__footer"><button class="btn btn--outline btn--sm" data-open-cart style="flex:1;border-color:var(--color-gold);color:var(--color-gold)">View Bag</button></div></div>
+<div class="search-overlay" id="search-overlay"><div class="search-overlay__box"><input type="search" class="search-overlay__input" placeholder="Search…" autocomplete="off"><div class="search-overlay__results"></div></div></div>
+
+<div style="padding-top:var(--nav-height)">
+  <section class="section">
+    <div class="container">
+      <h1 class="cart-page-title">Your Bag</h1>
+      <div class="cart-page-layout" id="cart-page-layout">
+        <div>
+          <div id="cart-page-items"></div>
+          <a href="../collections/shop-all.html" style="display:inline-flex;align-items:center;gap:8px;color:var(--color-gold);font-weight:600;font-size:var(--text-small);margin-top:var(--space-4)">← Continue Shopping</a>
+        </div>
+        <div class="cart-summary" id="cart-summary">
+          <h3 class="cart-summary__title">Order Summary</h3>
+          <div class="cart-summary__row"><span>Subtotal</span><span id="cp-subtotal">$0.00</span></div>
+          <div class="cart-summary__row"><span>Shipping</span><span id="cp-shipping">Calculated at checkout</span></div>
+          <div class="cart-summary__total"><span>Total</span><span id="cp-total">$0.00</span></div>
+          <button class="btn btn--gold btn--full" style="font-size:16px;padding:18px;margin-bottom:var(--space-2)" onclick="BF_UI.checkout()">Proceed to Checkout →</button>
+          <p style="font-size:var(--text-tiny);color:var(--color-muted);text-align:center">Taxes and shipping calculated at checkout</p>
+          <div style="margin-top:var(--space-4);padding-top:var(--space-4);border-top:1px solid var(--color-border)">
+            <div style="font-size:var(--text-small);font-weight:600;margin-bottom:var(--space-2)">Have a promo code?</div>
+            <div style="display:flex;gap:var(--space-2)">
+              <input type="text" placeholder="Enter code" style="flex:1;padding:10px 14px;border:1.5px solid var(--color-border);border-radius:var(--radius-pill);font-size:var(--text-small);outline:none;font-family:var(--font-body)">
+              <button class="btn btn--plum btn--sm">Apply</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Empty state -->
+      <div id="cart-empty-page" style="display:none;text-align:center;padding:var(--space-8) var(--space-4)">
+        <div style="font-size:64px;margin-bottom:var(--space-4)">🛍️</div>
+        <h2 style="font-family:var(--font-display);font-size:var(--text-heading);margin-bottom:var(--space-3)">Your bag is empty</h2>
+        <p style="color:var(--color-muted);margin-bottom:var(--space-5)">Add some beautiful beads and let the magic begin.</p>
+        <a href="../collections/shop-all.html" class="btn btn--gold">Shop Now →</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer class="site-footer"><div class="container"><div class="site-footer__grid"><div class="footer-brand"><div class="footer-brand__logo">Body Favors</div><p class="footer-brand__bio">Handcrafted waist beads, fans, and self-care rooted in African tradition.</p></div><div class="footer-col"><div class="footer-col__title">Shop</div><a href="../collections/shop-all.html">Shop All</a><a href="../collections/waist-beads.html">Waist Beads</a></div><div class="footer-col"><div class="footer-col__title">Learn</div><a href="../pages/about-us.html">About Us</a><a href="../pages/faqs.html">FAQs</a></div><div class="footer-col"><div class="footer-col__title">Help</div><a href="../pages/contact-us.html">Contact</a></div></div><div class="site-footer__bottom"><p class="footer-bottom__copy">© 2026 Body Favors Waist Beads.</p></div></div></footer>
+
+<script src="../assets/js/data.js"></script><script src="../assets/js/ui.js"></script>
+<script>
+function renderCartPage() {
+  const items = window.BF.cart.items || [];
+  const total = window.BF.cart.total || 0;
+  const layout = document.getElementById('cart-page-layout');
+  const empty = document.getElementById('cart-empty-page');
+  const itemsEl = document.getElementById('cart-page-items');
+
+  if (!items.length) {
+    layout.style.display = 'none';
+    empty.style.display = 'block';
+    return;
+  }
+  layout.style.display = 'grid';
+  empty.style.display = 'none';
+
+  itemsEl.innerHTML = items.map(item => `
+    <div class="cart-page-item">
+      <img class="cart-page-item__img" src="${item.image}" alt="${item.name}" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22%3E%3Crect fill=%22%23F0EBE3%22 width=%22100%22 height=%22100%22/%3E%3C/svg%3E'">
+      <div class="cart-page-item__info">
+        <div class="cart-page-item__name">${item.name}</div>
+        <div class="cart-page-item__price">$${parseFloat(item.price).toFixed(2)}</div>
+        <div class="cart-item__controls">
+          <div class="qty-stepper">
+            <button onclick="BF.updateQty('${item.key}', ${item.qty - 1})" aria-label="Decrease">−</button>
+            <span class="qty-stepper__count">${item.qty}</span>
+            <button onclick="BF.updateQty('${item.key}', ${item.qty + 1})" aria-label="Increase">+</button>
+          </div>
+          <button class="cart-item__remove" onclick="BF.removeFromCart('${item.key}')">Remove</button>
+        </div>
+      </div>
+      <div style="font-weight:700;color:var(--color-gold);white-space:nowrap">$${(parseFloat(item.price) * item.qty).toFixed(2)}</div>
+    </div>
+  `).join('');
+
+  const freeShip = total >= 55;
+  document.getElementById('cp-subtotal').textContent = `$${total.toFixed(2)}`;
+  document.getElementById('cp-shipping').textContent = freeShip ? '🎉 Free!' : 'Calculated at checkout';
+  document.getElementById('cp-total').textContent = `$${total.toFixed(2)}`;
+}
+
+document.addEventListener('DOMContentLoaded', renderCartPage);
+document.addEventListener('bf:cartUpdated', renderCartPage);
+</script>
+</body>
+</html>

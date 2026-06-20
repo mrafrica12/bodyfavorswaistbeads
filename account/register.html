@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account — Body Favors Waist Beads</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/tokens.css"><link rel="stylesheet" href="../assets/css/components.css"><link rel="stylesheet" href="../assets/css/pages.css">
+</head>
+<body>
+<div class="auth-page">
+  <div class="auth-card">
+    <div class="auth-card__logo"><h1>Body Favors</h1><p style="color:var(--color-muted);font-size:var(--text-small);margin-top:4px">Waist Beads</p></div>
+    <h2 class="auth-card__title">Join the Squad</h2>
+    <p class="auth-card__sub">Create your account for faster checkout, order tracking, and exclusive member perks.</p>
+    <form onsubmit="handleRegister(event)">
+      <div class="form-row">
+        <div class="form-group"><label class="form-label" for="first-name">First Name</label><input class="form-input" id="first-name" type="text" placeholder="First name" required></div>
+        <div class="form-group"><label class="form-label" for="last-name">Last Name</label><input class="form-input" id="last-name" type="text" placeholder="Last name" required></div>
+      </div>
+      <div class="form-group"><label class="form-label" for="register-email">Email Address</label><input class="form-input" id="register-email" type="email" placeholder="your@email.com" required></div>
+      <div class="form-group"><label class="form-label" for="register-password">Password</label><input class="form-input" id="register-password" type="password" placeholder="Create a password" required></div>
+      <button type="submit" class="btn btn--gold btn--full" style="font-size:16px;padding:16px;margin-bottom:var(--space-3)">Create Account →</button>
+    </form>
+    <p class="auth-switch">Already have an account? <a href="login.html">Sign in →</a></p>
+    <div style="text-align:center;margin-top:var(--space-4)"><a href="../index.html" style="font-size:var(--text-small);color:var(--color-muted)">← Back to Home</a></div>
+  </div>
+</div>
+<script src="../assets/js/data.js"></script><script src="../assets/js/ui.js"></script>
+<script>
+function handleRegister(e) {
+  e.preventDefault();
+  BF_UI.showToast('Opening secure account creation on the official store', 'success');
+  setTimeout(() => window.location.href = 'https://www.bodyfavorswaistbeads.com/account/register', 1000);
+}
+</script>
+</body>
+</html>
